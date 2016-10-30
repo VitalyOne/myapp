@@ -2,16 +2,18 @@
 	<head>
 		<title> 1'st project!
 		</title>
-		<a href="about">Про меня</a>
+		
 	</head>
 		<body>	
+	<div><center> <a href=''> Динамически формирующиеся записи блога:</a> </center></div>
 {% for post in posts %}
 	<div>
-		<p>published: {{post.published_date}}</p>
+		
 		<h1><a href="">{{post.title}}</a></h1>
 		<p>{{post.text|linebreaksbr}}</p>
+		<p>Опубликовано: {{post.published_date}}</p>
 	</div>
 {% endfor %}
-
+<a href="about">Про меня</a>
 	</body>
 </html>
