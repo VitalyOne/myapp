@@ -1,19 +1,45 @@
+{% load staticfiles %}
 <html>
 	<head>
 		<title> 1'st project!
 		</title>
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="{% static 'css/blog.css' %}">
+<link href="https://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+
+<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Indie+Flower|Neucha" rel="stylesheet">  
 		
 	</head>
 		<body>	
-	<div><center> <a href=''> Динамически формирующиеся записи блога:</a> </center></div>
-{% for post in posts %}
-	<div>
+
+
+
+	<div class="page-header"><center><h2><strong><a href=''> Testing my new App - THE_TEST:</a></strong></h2> </center></div>
+
+<div class="content">
+	<div class="row">
+		<div class="col">
+
+		{% for post in posts %}
+			<div class="post">
 		
-		<h1><a href="">{{post.title}}</a></h1>
-		<p>{{post.text|linebreaksbr}}</p>
-		<p>Опубликовано: {{post.published_date}}</p>
-	</div>
+			<h1><a href="">{{post.title}}</a></h1>
+			<p>{{post.text|linebreaksbr}}</p>
+				<div class="date">
+				<p>Опубликовано: {{post.published_date}}</p>
+				</div>
+			</div>
 {% endfor %}
-<a href="about">Про меня</a>
-	</body>
+		</div>
+	</div>
+</div>
+<div class="about">
+<a href="about">ABOUT...</a>
+</div>
+
+
+
+</body>
 </html>
