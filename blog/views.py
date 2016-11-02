@@ -3,6 +3,8 @@ from .models import Post
 from django.utils import timezone
 from .forms import PostForm
 from django.shortcuts import redirect
+from django.contrib.auth.models import AnonymousUser
+from django.contrib.auth.models import User
 
 
 # Create your views here.
@@ -20,7 +22,14 @@ def post_new(request):
         form = PostForm(request.POST)
         if form.is_valid():
             post = form.save(commit=False)
-            post.author = request.user
+            if request.user.is_authenticated:
+                post.author = request.user
+            else:
+               
+                post.author = User.objects.get(username='guest')
+          
+            
+            
             post.published_date = timezone.now()
             post.save()
             return redirect('post_detail', pk=post.pk)
