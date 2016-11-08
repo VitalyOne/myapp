@@ -1,16 +1,50 @@
+{% load staticfiles %}
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>
-		about me!
-		</title>
-	</head>
-	<body>
-	<div>
-{% for l in a %}
-{{l}}</br>
-{% endfor %}
-</div><br>
-	<div><a href='\'>go back!</a>
+<head><title>About me</title>
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+<link href="https://fonts.googleapis.com/css?family=Cinzel|Days+One|Luckiest+Guy" rel="stylesheet"> 
+<link rel="stylesheet" href="{% static 'css/blog2.css' %}">
 
-	</body>
+</head>
+<body>
+<div class="header"><h1>About me :)</h1></div>
+
+<p>Hello! It's my first experience of making web app. It's all for fun.. Enjoy :)</p>
+
+
+<ul>
+
+
+<li>
+<script type="text/javascript" src="https://secure.skypeassets.com/i/scom/js/skype-uri.js"></script>
+<div id="SkypeButton_Call_sunset.people_1">
+ <script type="text/javascript">
+ Skype.ui({
+ "name": "chat",
+ "element": "SkypeButton_Call_sunset.people_1",
+ "participants": ["sunset.people"],
+ "imageSize": 32
+ });
+ </script>
+</div>
+</li>
+
+<li>
+<a href="/" class="btn">GO BACK</a>
+</li>
+
+</ul>
+<div class="vk1">
+<script type="text/javascript" src="//vk.com/js/api/openapi.js?136"></script>
+
+<div id="vk_subscribe"></div>
+<script type="text/javascript">
+VK.Widgets.Subscribe("vk_subscribe", {}, 1672245);
+</script>
+</div>
+
+
+</body>
 </html>

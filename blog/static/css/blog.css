@@ -1,40 +1,98 @@
-.about a {
-	 font-family: 'Indie Flower', cursive;
-        float: right;
-        color: blue;
-	font-size: 12pt;
-    }
-
 body {
-	background-color: #FAE4C5;
+	  background: url("http://cs408121.vk.me/v408121467/2835/R2uvUq0D4Bw.jpg") repeat;
+    background-size: cover;
+
 	} 
 .page-header {
-        font-family: 'Indie Flower', cursive;
-        background-color: #ff9400;
-        margin-top: 0;
-        padding: 20px 20px 20px 40px;
+    top:0px;
+    width: 100%;
+    height: 150px;
+    font-family: 'Audiowide', cursive;
+    font-size: 50px;
+    position: fixed;
+margin-top: 0px;
+    font-size: 60px;
+    border: 1px solid black;
+    
+    opacity: 0.9;
+
     }
-    .page-header h2, .page-header h2 a, .page-header h2 a:visited, .page-header h2 a:active {
-        color: black;
-        font-size: 36pt;
-        text-decoration: none;
-    }
+.page-header h1 {
+    color:red;
+font-size: 60px;
+padding-left: 50px;
+}
+.page-header .btn {
+    margin-left:350px;
+    margin-bottom: 40px;
+
+}
+.btn {
+  background-color: #14213D;
+  color: #FFF;
+
+  font-size: 20px;
+  padding: 12px;
+  background-color:rgba(0, 0, 0, 0.7);
+}
+.btn:hover {
+    color:black;
+    background-color:rgba(255, 255, 255, 0.3);
+}
+.btn1 {
+  background-color: #14213D;
+  color: #FFF;
+
+  font-size: 40px;
+  padding: 12px;
+  background-color:rgba(0, 0, 0, 0.7);
+}
+.btn1:hover {
+    color:black;
+    background-color:rgba(255, 255, 255, 0.3);
+}
+ul {
+    text-align: right;
+}
+li {
+    display: inline-block;
+}
+
+.btn2 {
+  background-color: #14213D;
+  color: black;
+
+  font-size: 20px;
+  padding: 12px;
+  background-color:rgba(255, 255, 255, 0.3);
+}
+.btn2:hover {
+    color: #FFF;
+    background-color:rgba(0, 0, 0, 0.7);
+}
+
+
+
 .post {
-	font-family: 'Neucha', cursive;
+	font-family: 'Jockey One', sans-serif;
+    color: black;
+    border: 1px solid white;
 	}
 
   .content {
-	color: #3843D1;
-        margin-left: 45px;
+	color: black;
+        margin-left: 55px;
 	margin-right: 45px;
-	background-color: #FFFFFF;
+
 	font-family: 'Neucha', cursive;
+    padding-top: 170px;
+  
     }
 
  .date {
 	font-family: 'Lobster'
         float: right;
-        color: #828282;
+        color: white;
     }
 
  .post-form textarea, .post-form input {
@@ -48,15 +106,12 @@ body {
         color: #ffffff;
         float: right;
         font-size: 26pt;
-        margin-right: 20px;
+        margin-right: 100px;
     }
  .post {
         margin-bottom: 70px;
     }
 
-    .post h1 a, .post h1 a:visited {
-        color: #000000;
-    }
-
+ 
 
 

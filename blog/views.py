@@ -8,6 +8,10 @@ from django.contrib.auth.models import User
 
 
 # Create your views here.
+def main_theme(request):
+	#posts = Post.objects.order_by('-created_date')
+	return render(request, 'blog/main.html', {})
+
 def post_list(request):
 	posts = Post.objects.order_by('-created_date')
 	return render(request, 'blog/post_list.html', {'posts': posts})

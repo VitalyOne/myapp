@@ -10,18 +10,29 @@
 
 <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Neucha" rel="stylesheet">  
+<link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Jockey+One" rel="stylesheet"> 
 		
 	</head>
 		<body>	
 
 
 	<div class="page-header">
-<a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
 
 
 
-<center><h2><strong><a href="/"> Testing my new App - THE_TEST:</a></strong></h2> </center>
+
+<h1><a href="{% url 'post_list' %}" class="btn1">My blog</a></h1>
+<ul>
+<li>
+<a href="{% url 'post_new' %}" class="btn">NEW POST</a>
+</li>
+<li>
+<a href="/" class="btn">GO BACK</a>
+</li>
+</ul>
 	</div>
+
 
 <div class="content">
 	<div class="row">
@@ -32,10 +43,6 @@
 		</div>
 	</div>
 </div>
-<div class="about">
-<a href="about">ABOUT...</a>
-</div>
-
 
 
 </body>
